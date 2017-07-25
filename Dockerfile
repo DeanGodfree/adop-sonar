@@ -1,4 +1,4 @@
-FROM sonarqube:6.4-alpine
+FROM sonarqube:6.4
 
 ENV SONARQUBE_PLUGINS_DIR=/opt/sonarqube/default/extensions/plugins \
     SONARQUBE_SERVER_BASE="http://localhost:9000" \
