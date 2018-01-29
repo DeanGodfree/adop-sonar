@@ -76,5 +76,12 @@ if [ ! -e "/opt/sonarqube/logs/access.log" ]
   then
   ln -s /dev/stdout /opt/sonarqube/logs/access.log
 fi
-# Start SonarQube
+
+if [[ -n "$SECRETS_DIR" && -d "$SECRETS_DIR" ]]
+  then
+  # SECRETS_DIR contains secret files, each file has KEY=VALUE content
+  eval $(cat $SECRETS_DIR/*)
+fi
+
+# Start SonarQube https://github.com/SonarSource/docker-sonarqube/blob/master/6.4-alpine/run.sh
 ./bin/run.sh ${SONAR_ARGUMENTS}
