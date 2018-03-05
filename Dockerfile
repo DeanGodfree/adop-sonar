@@ -21,6 +21,13 @@ COPY resources/sonar.sh resources/plugins.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 RUN /usr/local/bin/plugins.sh ${SONARQUBE_PLUGINS_DIR}/plugins.txt
 
+# Section to support sonar-kotlin (https://github.com/arturbosch/sonar-kotlin)
+RUN git clone https://github.com/arturbosch/sonar-kotlin \
+&& cd sonar-kotlin \
+&& mvn package \
+&& cp target/sonar-kotlin-0.4.1.jar $SONARQUBE_PLUGINS_DIR
+#end of sonar-kotlin section
+
 VOLUME ["/opt/sonarqube/logs/"]
 
 ENTRYPOINT ["/usr/local/bin/sonar.sh"]
