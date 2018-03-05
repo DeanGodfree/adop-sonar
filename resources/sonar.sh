@@ -5,13 +5,6 @@
 #
 set -e
 
-# Section to support sonar-kotlin (https://github.com/arturbosch/sonar-kotlin)
-git clone https://github.com/arturbosch/sonar-kotlin
-cd sonar-kotlin
-mvn package
-cp target/sonar-kotlin-0.4.1.jar $SONARQUBE_PLUGINS_DIR
-#end of sonar-kotlin section
-
 # Copy SonarQube plugins.
 if [ "$(ls -A ${SONARQUBE_PLUGINS_DIR})" ]; then
     # Create a backup folder for the provided plugins
