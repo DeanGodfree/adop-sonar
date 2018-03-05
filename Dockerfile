@@ -1,6 +1,13 @@
 FROM sonarqube:6.7
 MAINTAINER Dean Godfree, <dean.j.godfree>
 
+# Adding section to support sonar-kotlin plugin
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		git \
+		maven \
+	&& rm -rf /var/lib/apt/lists/*
+#end of sonar-kotlin plugin support
+
 ENV SONARQUBE_PLUGINS_DIR=/opt/sonarqube/default/extensions/plugins \
     SONARQUBE_SERVER_BASE="http://localhost:9000" \
     SONARQUBE_WEB_CONTEXT="/sonar" \
