@@ -13,3 +13,4 @@ http://downloads.sonarsource.com/plugins/org/codehaus/sonar-plugins/sonar-tab-me
 https://github.com/stevespringett/dependency-check-sonar-plugin/releases/download/1.1.0/sonar-dependency-check-plugin-1.1.0.jar
 https://github.com/Cognifide/AEM-Rules-for-SonarQube/releases/download/v0.9/aemrules-0.9.jar
 https://github.com/SonarQubeCommunity/sonar-auth-aad/releases/download/1.0/sonar-auth-aad-plugin-1.0.jar
+https://github.com/gabrie-allaigre/sonar-gitlab-plugin/releases/download/2.1.0/sonar-gitlab-plugin-2.1.0.jar
