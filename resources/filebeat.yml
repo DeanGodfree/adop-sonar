@@ -42,7 +42,7 @@ filebeat.prospectors:
   paths:
     - "/opt/sonarqube/log/*"
   fields:
-    sonarqube: true
+    log: sonarqube
   fields_under_root: true
 
   # Include lines. A list of regular expressions to match. It exports the lines that are
