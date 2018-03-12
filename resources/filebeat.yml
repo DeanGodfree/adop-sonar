@@ -36,7 +36,7 @@ filebeat.prospectors:
   json.add_error_key: true
   json.message_key: log
   fields:
-    log: chaincode
+    log: sdk
 
   # Include lines. A list of regular expressions to match. It exports the lines that are
   # matching any regular expression from the list.
