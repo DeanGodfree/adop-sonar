@@ -37,6 +37,13 @@ filebeat.prospectors:
   json.message_key: log
   fields:
     log: sdk
+    
+  - type: log
+  paths:
+    - "/opt/sonarqube/log/*"
+  fields:
+    sonarqube: true
+  fields_under_root: true
 
   # Include lines. A list of regular expressions to match. It exports the lines that are
   # matching any regular expression from the list.
