@@ -38,7 +38,7 @@ filebeat.prospectors:
   fields:
     log: sdk
     
-  - type: log
+ - type: log
   paths:
     - "/opt/sonarqube/log/*"
   fields:
