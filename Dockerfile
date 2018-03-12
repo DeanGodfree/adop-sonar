@@ -15,9 +15,9 @@ RUN curl -o /tmp/filebeat_6.2.2_amd64.deb https://artifacts.elastic.co/downloads
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
  #Copying new filebeat config in post install
- COPY filebeat.yml /etc/filebeat/filebeat.yml
+ COPY resources/filebeat.yml /etc/filebeat/filebeat.yml
  #copying example log file for testing filebeat/grafana **should be removed folowing integration testing
- COPY sdk_data.json /var/log/sdk_data.json
+ COPY resources/sdk_data.json /var/log/sdk_data.json
 
 
 
