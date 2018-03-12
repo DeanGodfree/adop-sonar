@@ -83,5 +83,9 @@ if [[ -n "$SECRETS_DIR" && -d "$SECRETS_DIR" ]]
   eval $(cat $SECRETS_DIR/*)
 fi
 
+#Start Filebeat
+echo "Starting filebeat"
+/etc/init.d/filebeat start
+
 # Start SonarQube https://github.com/SonarSource/docker-sonarqube/blob/master/6.4-alpine/run.sh
 ./bin/run.sh ${SONAR_ARGUMENTS}
