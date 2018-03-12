@@ -4,9 +4,9 @@ MAINTAINER Dean Godfree, <dean.j.godfree>
 # Adding section to support sonar-kotlin plugin
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		git \
-		maven
+		maven \
+		curl
 #end of sonar-kotlin plugin support
-
 
 
 #Install Filebeat
