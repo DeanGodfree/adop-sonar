@@ -14,3 +14,4 @@ https://github.com/stevespringett/dependency-check-sonar-plugin/releases/downloa
 https://github.com/Cognifide/AEM-Rules-for-SonarQube/releases/download/v0.9/aemrules-0.9.jar
 https://github.com/SonarQubeCommunity/sonar-auth-aad/releases/download/1.0/sonar-auth-aad-plugin-1.0.jar
 https://github.com/gabrie-allaigre/sonar-gitlab-plugin/releases/download/2.1.0/sonar-gitlab-plugin-2.1.0.jar
+https://github.com/kogitant/sonar-slack-notifier-plugin/releases/download/2.1.2/cks-slack-notifier-2.1.2.jar
